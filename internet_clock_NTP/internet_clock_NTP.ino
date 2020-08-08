@@ -1,7 +1,7 @@
 #include <NTPClient.h>
 #include <ESP8266WiFi.h> // provides ESP8266 specific Wi-Fi routines we are calling to connect to network
 #include <WiFiUdp.h> //handles sending and receiving of UDP packages
-/*
+/*to add SPI OLED display for printing
 #include <SPI.h> // SPI for interfacing OLED with NodeMCU
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
@@ -39,7 +39,7 @@ void setup(){
     Serial.print ( "." );
   }
   timeClient.begin(); 
-/*  display config
+/*  for display config
   if(!display.begin(SSD1306_SWITCHCAPVCC))
   {
     Serial.println(F("SSD1306 allocation failed"));
